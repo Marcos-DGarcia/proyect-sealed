@@ -1,0 +1,25 @@
+<div class="container text-center m-5">
+    <hr>
+    <h1>
+        DATOS   
+    </h1>
+    <hr>
+</div>
+<table class="table table-striped" id="datos">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Email</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {{#each datos}}
+    <tr>
+      <th scope="row">{{idviaje}}</th>
+      <td>{{nombre}}</td>
+      <td>{{email}}</td>
+    </tr>
+    {{/each}}
+</table>

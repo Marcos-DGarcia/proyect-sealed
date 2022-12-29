@@ -1,11 +1,11 @@
 // IMPORTO LA DEPENDENCIA
 const mysql = require('mysql2');
-// CONEXION DE BASE DE DATOS
+// CONEXION DE BASE DE DATOS CREACION DE TABLA.
 const conexion = mysql.createConnection({
-    host:'localhost',
-    port: 3306,
-    user: 'root',
-    password: 'MarcosGarcia1234.'
+    host: process.env.HOST,
+    port: process.env.PORTBD,
+    user: process.env.USER,
+    password: process.env.PASSWORD
 });
 conexion.connect((err)=>{
     if (err){
